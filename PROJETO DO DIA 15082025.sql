@@ -1,0 +1,25 @@
+CREATE TABLE atores( 
+id SERIAL PRIMARY KEY, 
+NOME TEXT
+--IDADETOR INTEGER
+); 
+
+CREATE TABLE filmes(
+id SERIAL PRIMARY KEY, 
+idAtor int, 
+--CONSTRAINT FK_atores FOREIGN KEY idAtor REFERENCES atores (id),
+NOME VARCHAR (100)
+);
+
+CREATE TABLE ATOR_CACHE(
+id SERIAL PRIMARY KEY, 
+IDATOR INT, 
+CACHE NUMERIC
+
+);
+
+INSERT INTO atores (NOME) VALUES ("Matheus Dallas"), ("Gustavo Latarias"), ("Junim"), ("carlin"); 
+INSERT INTO filme (nome)
+DROP TABLE atores;
+DROP TABLE filmes;
+DROP TABLE ATOR_CACHE;
